@@ -1,0 +1,191 @@
+:root {
+    --color--fondo--sendans: hsl(31, 77%, 52%);
+    --color--fondo--suvs: hsl(184, 100%, 22%);
+    --color--fondo--luxury: hsl(179, 100%, 13%);
+    --color--font--parrafo: hsla(0, 0%, 100%, 0.75);
+    --color--resto: hsl(0, 0%, 95%);
+    --font--lexed--deca: 'Lexend Deca', sans-serif;
+    --font--big--shoulders--display: 'Big Shoulders Display', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--color--resto);
+}
+
+img {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    width: 60px;
+}
+
+h2 {
+    color: var(--color--resto);
+    font-family: var(--font--big--shoulders--display);
+    font-size: 35px;
+    height: 2em;
+}
+
+p {
+    color: var(--color--font--parrafo);
+    font-family: var(--font--lexed--deca);
+    height: 8em;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+button {
+    background-color: var(--color--resto);
+    width: 19vh;
+    height: 46px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.contenedor__carta__informacion {
+    width: 75%;
+    margin: auto;
+}
+
+.carta1 {
+    background-color: var(--color--fondo--sendans);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 70px;
+}
+
+.carta2 {
+    background-color: var(--color--fondo--suvs);
+}
+
+.carta3 {
+    background-color: var(--color--fondo--luxury);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.btn-sendans {
+    color: var(--color--fondo--sendans);
+    font-weight: 700;
+}
+
+.btn-suvs {
+    color: var(--color--fondo--suvs);
+    font-weight: 700;
+}
+
+.btn-luxury {
+    color: var(--color--fondo--luxury);
+    font-weight: 700;
+}
+
+.btn-sendans:hover {
+    background-color: var(--color--fondo--sendans);
+    border: 2px solid var(--color--resto);
+    color: white;
+}
+
+.btn-suvs:hover {
+    background-color: var(--color--fondo--suvs);
+    border: 2px solid var(--color--resto);
+    color: white;
+}
+
+.btn-luxury:hover {
+    background-color: var(--color--fondo--luxury);
+    border: 2px solid var(--color--resto);
+    color: white;
+}
+
+
+@media (min-width:720px){
+    img {
+        width: 65px;
+    }
+
+    h2 {
+        font-size: 50px;
+        height: 1.5em;
+    }
+
+    p {
+        line-height: 30px;
+
+    }
+
+    button {
+        margin-top: 150px;
+        width: 22vh;
+        height: 50px;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .contenedor__carta__informacion {
+    
+        width: 70%;
+    }
+    
+    .carta1 {
+        background-color: var(--color--fondo--sendans);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0;
+        width: 30em;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    .carta2 {
+        background-color: var(--color--fondo--suvs);
+        width: 30em;
+    }
+    
+    .carta3 {
+        background-color: var(--color--fondo--luxury);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+        width: 30em;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .btn-sendans:hover {
+        background-color: var(--color--fondo--sendans);
+        border: 2px solid var(--color--resto);
+        color: white;
+    }
+
+    .btn-suvs:hover {
+        background-color: var(--color--fondo--suvs);
+        border: 2px solid var(--color--resto);
+        color: white;
+    }
+
+    .btn-luxury:hover {
+        background-color: var(--color--fondo--luxury);
+        border: 2px solid var(--color--resto);
+        color: white;
+    }
+
+}   
